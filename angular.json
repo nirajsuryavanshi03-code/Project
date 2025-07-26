@@ -20,8 +20,9 @@
                 "glob": "**/*",
                 "input": "public"
               },
-               "src/assets",
-               "src/favicon.ico"
+               "src/favicon.ico",
+                "src/assets",
+                "public"
             ],
             "styles": [
               "src/styles.css"
