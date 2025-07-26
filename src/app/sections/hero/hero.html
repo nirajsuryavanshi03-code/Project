@@ -1,4 +1,29 @@
-<section style="text-align: center; padding: 80px 20px; background-color: #1f2937; color: white;">
-  <h1 style="font-size: 3rem; margin-bottom: 10px;">Unimax Industries</h1>
-  <p style="font-size: 1.5rem;">Precision. Strength. Excellence in Metal Work.</p>
-</section>
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="logo" href="#">Unimax Industries</a>
+    <div class="hamburger" [class.active]="menuOpen" (click)="toggleMenu()" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="mobile-nav" [class.open]="menuOpen" id="mobile-nav">
+  <ul>
+    <li><a href="#about" (click)="closeMenu()">About</a></li>
+    <li><a href="#services" (click)="closeMenu()">Services</a></li>
+    <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+    <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+  </ul>
+</div>
+
+<div class="hero-content">
+  <h1>Welcome to Unimax Fabrication</h1>
+  <p>Custom Fabrication Experts at Your Service</p>
+</div>
